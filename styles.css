@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e8f4f8);
+    color: #444;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(88, 157, 193, 0.8), rgba(26, 124, 121, 0.8)); /* Gradient overlay */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 1.8rem;
+    margin: 10px 0 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    animation: zoomIn 10s ease-in-out infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+main {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-1-image {
+    width: 10%;
+    height: auto;
+    transform: translateY(20px);
+}
+.section-8-image {
+    width: 15%; /* Adjust the width as needed */
+    height: auto;
+    float: right; /* Aligns the image to the right */
+    margin-left: 0px;
+    transform: translateY(30px);
+}
+}
+
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(135deg, #4c7c6f, #3a5f55);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Gradient Background for Sections */
+#description {
+    background: linear-gradient(135deg, #e8f4f8, #d4e9f2);
+}
+
+#symptoms {
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+}
+
+#causes {
+    background: linear-gradient(135deg, #f0f5f0, #e0ebe0);
+}
+
+#treatments {
+    background: linear-gradient(135deg, #f8f0f0, #f0e0e0);
+}
+
+#statistics {
+    background: linear-gradient(135deg, #e8f5e9, #d8eed8);
+}
+
+#impact {
+    background: linear-gradient(135deg, #f8f5e1, #f0e8c8);
+}
+
+#stories {
+    background: linear-gradient(135deg, #f5e8f5, #eed8ee);
+}
+
+/* Hover Effects for Cards */
+#description:hover {
+    background: linear-gradient(135deg, #d4e9f2, #c0dde8);
+}
+
+#symptoms:hover {
+    background: linear-gradient(135deg, #e8e8e8, #d8d8d8);
+}
+
+#causes:hover {
+    background: linear-gradient(135deg, #e0ebe0, #d0e0d0);
+}
+
+#treatments:hover {
+    background: linear-gradient(135deg, #f0e0e0, #e8d0d0);
+}
+
+#statistics:hover {
+    background: linear-gradient(135deg, #d8eed8, #c8e0c8);
+}
+
+#impact:hover {
+    background: linear-gradient(135deg, #f0e8c8, #e8d8b0);
+}
+
+#stories:hover {
+    background: linear-gradient(135deg, #eed8ee, #e0c8e0);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c9d8f;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a8a7d;
+}
+/* Hyperlink Styling */
+a {
+    color: #4c7c6f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3a5f55;
+    text-decoration: underline;
+}
