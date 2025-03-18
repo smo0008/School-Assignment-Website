@@ -124,16 +124,17 @@ h2 {
 }
 
 .section-1-image {
-    width: 10%;
+    width: 15%;
     height: auto;
+    float: right;
     transform: translateY(20px);
 }
 .section-8-image {
-    width: 15%; /* Adjust the width as needed */
+    width: 15%;
     height: auto;
-    float: right; /* Aligns the image to the right */
+    float: right;
     margin-left: 0px;
-    transform: translateY(30px);
+    transform: translateY(40px);
 }
 }
 
