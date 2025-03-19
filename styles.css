@@ -54,17 +54,6 @@ header p {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.header-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    animation: zoomIn 10s ease-in-out infinite alternate;
-}
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -86,15 +75,6 @@ header p {
     }
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
 main {
     padding: 60px 40px;
     max-width: 1200px;
@@ -104,11 +84,11 @@ main {
 .card {
     background: white;
     padding: 40px;
-    margin-bottom: 20px;
-    border-radius: 15px;
+    margin-bottom: 40px;
+    border-radius: 25px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.05);
     animation: fadeInSlideUp 1s ease-in-out forwards;
     animation-delay: var(--card-delay);
     opacity: 0;
@@ -138,12 +118,19 @@ main {
     --card-delay: 1s;
 }
 .card:nth-child(7) {
-    --card-delay: 1s;
+    --card-delay: 1.2s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-top: 0px;
+}
+
+.card p {
+    margin-top: 0px;
 }
 
 h2 {
@@ -153,18 +140,10 @@ h2 {
     display: inline-block;
 }
 
-.section-1-image {
+.section-image {
     width: 15%;
     height: auto;
     float: right;
-    transform: translateY(20px);
-}
-.section-8-image {
-    width: 15%;
-    height: auto;
-    float: right;
-    margin-left: 0px;
-    transform: translateY(40px);
 }
 
 ul {
@@ -249,35 +228,6 @@ ul li {
 
 #stories {
     background: linear-gradient(135deg, #f5e8f5, #eed8ee);
-}
-
-/* Hover Effects for Cards */
-#description:hover {
-    background: linear-gradient(135deg, #d4e9f2, #c0dde8);
-}
-
-#symptoms:hover {
-    background: linear-gradient(135deg, #e8e8e8, #d8d8d8);
-}
-
-#causes:hover {
-    background: linear-gradient(135deg, #e0ebe0, #d0e0d0);
-}
-
-#treatments:hover {
-    background: linear-gradient(135deg, #f0e0e0, #e8d0d0);
-}
-
-#statistics:hover {
-    background: linear-gradient(135deg, #d8eed8, #c8e0c8);
-}
-
-#impact:hover {
-    background: linear-gradient(135deg, #f0e8c8, #e8d8b0);
-}
-
-#stories:hover {
-    background: linear-gradient(135deg, #eed8ee, #e0c8e0);
 }
 
 /* Scrollbar Styling */
