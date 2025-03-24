@@ -140,12 +140,6 @@ h2 {
     display: inline-block;
 }
 
-.section-image {
-    width: 15%;
-    height: auto;
-    float: right;
-}
-
 ul {
     list-style-type: square;
     padding-left: 30px;
@@ -303,7 +297,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 952px;
+    max-width: 580px;
 }
 
 .site-footer-links {
@@ -323,7 +317,7 @@ footer {
     height: 24px;
 }
 
-@media (min-width: 966px) {
+@media (min-width: 466px) {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
