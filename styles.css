@@ -12,7 +12,7 @@ body {
 /* Header Styles */
 header {
     position: relative;
-    height: 200px;
+    height: 0px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -317,7 +317,7 @@ footer {
     height: 24px;
 }
 
-@media (min-width: 466px) {
+@media (min-width: 618px) {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
