@@ -2,7 +2,7 @@
 This project is a website created as part of a school assignment.
 
 # Installation
-The website is being hosted [here](https://main.dr7kktrvsmllr.amplifyapp.com).
+The website is being hosted [here](https://main.d23615eydcvlce.amplifyapp.com/).
 
 ## Alternatively
 ```
